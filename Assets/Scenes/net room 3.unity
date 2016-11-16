@@ -595,7 +595,8 @@ Prefab:
         type: 2}
       propertyPath: m_SpawnPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 133630, guid: 3d32cf45a839148f4b79ec98db32ce9e, type: 2}
+      objectReference: {fileID: 1000010228982546, guid: f5a55724b3f624faa8fa8e412e1aea1a,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa, type: 2}
   m_IsPrefabParent: 0
@@ -1864,7 +1865,8 @@ MonoBehaviour:
     type: 2}
   Chairprefab: {fileID: 1000012962147648, guid: 4a867c6667a4e4859b29b70cb01f3274,
     type: 2}
-  Cameraprefab: {fileID: 133630, guid: 3d32cf45a839148f4b79ec98db32ce9e, type: 2}
+  Cameraprefab: {fileID: 1000010228982546, guid: f5a55724b3f624faa8fa8e412e1aea1a,
+    type: 2}
   Cube: {fileID: 1000013458663886, guid: a8cf7931eeccf446586d8cc3ba8e2996, type: 2}
   Slup: {fileID: 1000014101971218, guid: dc2e43ef47639445b9287640ca457bba, type: 2}
   spawnPoint1: {fileID: 1482171025}

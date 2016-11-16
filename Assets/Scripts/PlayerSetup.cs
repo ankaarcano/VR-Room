@@ -23,19 +23,19 @@ public class PlayerSetup : NetworkBehaviour {
 			roomCam.gameObject.SetActive (true);
 			*/
 			//To było tutaj
-			/*GameObject roomCam = GameObject.FindGameObjectWithTag("cam");
+			GameObject roomCam = GameObject.FindGameObjectWithTag("cam");
 			roomCam.gameObject.SetActive (false);
 			Camera.main.gameObject.SetActive (true);
-			Cardboard.SDK.VRModeEnabled = true;*/
+			Cardboard.SDK.VRModeEnabled = true;
 
 
 		}
 		else{
 			//a to tutaj
 
-			/*Camera.main.gameObject.SetActive (false);
+			Camera.main.gameObject.SetActive (false);
 			GameObject roomCam = GameObject.FindGameObjectWithTag("cam");
-			roomCam.gameObject.SetActive (true);*/
+			roomCam.gameObject.SetActive (true);
 
 			//GameObject roomCam = GameObject.FindGameObjectWithTag("cam");
 			//roomCam.gameObject.SetActive (true);
