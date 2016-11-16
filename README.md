@@ -7,7 +7,7 @@ Przy odpalaniu aplikacji zbuildowane na PC i play modu w Unity jako drugiej apli
 
 Pierwsza wersja projektu - branch: master
 
-Udało mi się pobrać transform z prefabu obiektu i przypisać jego wartości drugiemu obiektowi. Jednak podczas działania aplikcji wartości Transforma, który pobieram są cały czas takie same, nie zmieniają się niezależnie od tego jakby się ten obiekt nie przemieszczał. Sprawdziłam, że te wartości odpowiadają tym z przed inicjalizacji prefabu na serwerze. Nie wiem jak sobie z tym porabić żeby można było pobierać aktualne dane. Napisałam posta na forum Unity Answers ale nikt nie odpisał.
+Udało mi się pobrać transform z prefabu obiektu(Cube1) i przypisać jego wartości drugiemu obiektowi(Slup). Jednak podczas działania aplikcji wartości Transforma, który pobieram są cały czas takie same, nie zmieniają się niezależnie od tego jakby się ten obiekt nie przemieszczał. Sprawdziłam, że te wartości odpowiadają tym z przed inicjalizacji prefabu na serwerze. Nie wiem jak sobie z tym porabić żeby można było pobierać aktualne dane. Napisałam posta na forum Unity Answers ale nikt nie odpisał.
 
 
 Druga wersja projektu - branch: 2kamery
