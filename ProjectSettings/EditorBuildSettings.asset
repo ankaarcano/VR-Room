@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Cardboard/DemoScene/DemoScene.unity
+  - enabled: 0
+    path: Assets/Scenes/Demo.unity
+  - enabled: 0
+    path: Assets/Scenes/InterRoom.unity
+  - enabled: 0
+    path: Assets/Scenes/Walk.unity
+  - enabled: 0
+    path: Assets/Scenes/3D sideBYside.unity
+  - enabled: 0
+    path: Assets/Scenes/Lobby.unity
+  - enabled: 0
+    path: Assets/Scenes/Lobby2.unity
+  - enabled: 0
+    path: Assets/Scenes/Lobby3.unity
+  - enabled: 1
+    path: Assets/Scenes/Poczekalnia.unity
+  - enabled: 1
+    path: Assets/Scenes/net room 3.unity
+  - enabled: 0
+    path: Assets/Scenes/Networking room.unity
