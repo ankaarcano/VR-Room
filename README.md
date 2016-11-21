@@ -13,3 +13,7 @@ Udało mi się pobrać transform z prefabu obiektu(Cube1) i przypisać jego wart
 Druga wersja projektu - branch: 2kamery
 
 Tutaj stworzyłam nieco zmodyfikowany prefab CardboardMain - prefab CardMain. W CardboardMain jest podpięty Head i to on odpowiada za obroty tego prefabu więc skoro dzieci dziedziczą po rodzicach pozycję i obrót to podpięłam do niego osobną kamerę. W skrypcie PlayerSetup wyłaczam jedną z kamer w odpowiednich aplikacjach. Jednak moja dodana kamera nadal się nie obraca, chociaż pozycję zmienia tak jak powinna.
+
+Trzecia wersja projektu - branch: 2kamery-naśladowanie
+NIe mogę usunąć Heada z klienta
+
