@@ -14,6 +14,5 @@ Druga wersja projektu - branch: 2kamery
 
 Tutaj stworzyłam nieco zmodyfikowany prefab CardboardMain - prefab CardMain. W CardboardMain jest podpięty Head i to on odpowiada za obroty tego prefabu więc skoro dzieci dziedziczą po rodzicach pozycję i obrót to podpięłam do niego osobną kamerę. W skrypcie PlayerSetup wyłaczam jedną z kamer w odpowiednich aplikacjach. Jednak moja dodana kamera nadal się nie obraca, chociaż pozycję zmienia tak jak powinna.
 
-Trzecia wersja projektu - branch: 2kamery-naśladowanie
-NIe mogę usunąć Heada z klienta
-
+Trzecia wersja projektu - branch: 2kamery-naśladowanie 
+Wszystko działa tylko nie mogę wyłączyć Obiektu "Head" na kliencie przez co jest na nim dyskoteka
