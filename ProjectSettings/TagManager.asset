@@ -9,6 +9,8 @@ TagManager:
   - fotel
   - chair
   - cam
+  - CardboardMain
+  - Head
   layers:
   - Default
   - TransparentFX

@@ -374,6 +374,85 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc4bd0497155b544aaf2ee9c5d8510e, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &338624649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 338624653}
+  - 33: {fileID: 338624652}
+  - 135: {fileID: 338624651}
+  - 23: {fileID: 338624650}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &338624650
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338624649}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &338624651
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338624649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &338624652
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338624649}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &338624653
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338624649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8701496, y: 1.599791, z: -2.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &359263943
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +629,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114000011088000224, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa,
+        type: 2}
+      propertyPath: m_SpawnPrefabs.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011903570470, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa, type: 2}
       propertyPath: m_LocalPosition.x
       value: -2.9993782
@@ -595,7 +679,24 @@ Prefab:
         type: 2}
       propertyPath: m_SpawnPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 1000010228982546, guid: f5a55724b3f624faa8fa8e412e1aea1a,
+      objectReference: {fileID: 133630, guid: 3d32cf45a839148f4b79ec98db32ce9e, type: 2}
+    - target: {fileID: 114000011088000224, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa,
+        type: 2}
+      propertyPath: m_SpawnPrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 1000014101971218, guid: dc2e43ef47639445b9287640ca457bba,
+        type: 2}
+    - target: {fileID: 114000011088000224, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa,
+        type: 2}
+      propertyPath: m_SpawnPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 1000011648660886, guid: fb45039b842164ea8a69710041c4f9c2,
+        type: 2}
+    - target: {fileID: 114000011088000224, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa,
+        type: 2}
+      propertyPath: m_SpawnPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 1000013458663886, guid: a8cf7931eeccf446586d8cc3ba8e2996,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 969cc7cb878bf4cb1ad5f75711b9c1fa, type: 2}
@@ -1865,11 +1966,13 @@ MonoBehaviour:
     type: 2}
   Chairprefab: {fileID: 1000012962147648, guid: 4a867c6667a4e4859b29b70cb01f3274,
     type: 2}
-  Cameraprefab: {fileID: 1000010228982546, guid: f5a55724b3f624faa8fa8e412e1aea1a,
+  Cardboardprefab: {fileID: 133630, guid: 3d32cf45a839148f4b79ec98db32ce9e, type: 2}
+  Cameraprefab: {fileID: 1000011648660886, guid: fb45039b842164ea8a69710041c4f9c2,
     type: 2}
   Cube: {fileID: 1000013458663886, guid: a8cf7931eeccf446586d8cc3ba8e2996, type: 2}
   Slup: {fileID: 1000014101971218, guid: dc2e43ef47639445b9287640ca457bba, type: 2}
   spawnPoint1: {fileID: 1482171025}
+  spawnPoint2: {fileID: 1789576075}
   spawnPoint3: {fileID: 1596038604}
   spawnPoint4: {fileID: 359263944}
 --- !u!114 &1492981891

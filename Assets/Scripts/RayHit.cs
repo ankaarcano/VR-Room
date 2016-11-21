@@ -130,6 +130,7 @@ public class RayHit : NetworkBehaviour {
 	void Update () {
 
 		RaycastHit hit;
+		if(isServer){
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		//Quaternion rot = Cardboard.SDK.HeadPose.Orientation;
 		//Vector3 pos = Cardboard.SDK.HeadPose.Position;
@@ -137,27 +138,22 @@ public class RayHit : NetworkBehaviour {
 		if (Physics.Raycast (ray, out hit)) {
 			if (hit.collider.tag == "Floor") {
 				floor = true;
-			} 
-			else {
+			} else {
 				floor = false;
 			}
 			if (floor && !isWalking && Cardboard.SDK.Triggered && !collision) {
 				isWalking = true;
-			}
-			else if (collision || (isWalking && 
-				head.transform.eulerAngles.x >= thresholdAngle && 
-				(Cardboard.SDK.Triggered ||
-					head.transform.eulerAngles.x >= RIGHT_ANGLE)) )
-
-			{
+			} else if (collision || (isWalking &&
+			         head.transform.eulerAngles.x >= thresholdAngle &&
+			         (Cardboard.SDK.Triggered ||
+			         head.transform.eulerAngles.x >= RIGHT_ANGLE))) {
 				isWalking = false;
 				collision = false; 
 			}
 
-			if (isWalking) 
-			{
-				Vector3 direction = new Vector3(head.transform.forward.x, 0, head.transform.forward.z).normalized * speed * Time.deltaTime;
-				Quaternion rotation = Quaternion.Euler(new Vector3(0, -transform.rotation.eulerAngles.y, 0));
+			if (isWalking) {
+				Vector3 direction = new Vector3 (head.transform.forward.x, 0, head.transform.forward.z).normalized * speed * Time.deltaTime;
+				Quaternion rotation = Quaternion.Euler (new Vector3 (0, -transform.rotation.eulerAngles.y, 0));
 				// dodać jakiś warunek żeby nie wychodzić poza ściany i nie włazić na przedmioty
 
 				RpcLookWalk (direction, rotation);
@@ -169,6 +165,7 @@ public class RayHit : NetworkBehaviour {
 				//CmdSendCoordinates(direction, rotation);
 			}
 		}
+	}
 	}
 	[ClientRpc]
 	public void RpcLookWalk(Vector3 _direction, Quaternion _rotation){

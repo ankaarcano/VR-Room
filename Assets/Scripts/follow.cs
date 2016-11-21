@@ -16,8 +16,8 @@ public class follow : NetworkBehaviour {
 
 		transform.position = _head.position;
 		transform.rotation = _head.rotation;
-		Debug.Log ("Head transform position " + _head.position);
-		Debug.Log ("Head transform rotation " + _head.rotation);
+		//Debug.Log ("Head transform position " + _head.position);
+		//Debug.Log ("Head transform rotation " + _head.rotation);
 
 	}
 }
